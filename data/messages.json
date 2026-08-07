@@ -1,0 +1,214 @@
+[
+  {
+    "id": "msg_1786071349888_v69v2",
+    "senderEmail": "sourjyadiptadas70@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "heelo dear",
+    "timestamp": "2026-08-07T02:55:49.888Z",
+    "formattedTime": "08:25 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786071351056_xl12f",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "sourjyadiptadas70@gmail.com",
+    "text": "I'm a simple AI assistant built right into your WhatsApp-style chat app!",
+    "timestamp": "2026-08-07T02:55:51.056Z",
+    "formattedTime": "08:25 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786071370219_rkiod",
+    "senderEmail": "sourjyadiptadas70@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "can you undersatnd benagli",
+    "timestamp": "2026-08-07T02:56:10.219Z",
+    "formattedTime": "08:26 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786071371226_l6fwf",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "sourjyadiptadas70@gmail.com",
+    "text": "I'm a simple AI assistant built right into your WhatsApp-style chat app!",
+    "timestamp": "2026-08-07T02:56:11.226Z",
+    "formattedTime": "08:26 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786071378748_cc86j",
+    "senderEmail": "sourjyadiptadas70@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "hmm bhujalm",
+    "timestamp": "2026-08-07T02:56:18.748Z",
+    "formattedTime": "08:26 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786071379755_125v5",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "sourjyadiptadas70@gmail.com",
+    "text": "I'm a simple AI assistant built right into your WhatsApp-style chat app!",
+    "timestamp": "2026-08-07T02:56:19.755Z",
+    "formattedTime": "08:26 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786071436844_zfhfj",
+    "senderEmail": "bob@gmail.com",
+    "receiverEmail": "sourjyadiptadas70@gmail.com",
+    "text": "hi",
+    "timestamp": "2026-08-07T02:57:16.844Z",
+    "formattedTime": "08:27 am",
+    "status": "sent"
+  },
+  {
+    "id": "msg_1786071592123_1k3ks",
+    "senderEmail": "bob@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "hi",
+    "timestamp": "2026-08-07T02:59:52.123Z",
+    "formattedTime": "08:29 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786071593140_9pb74",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "bob@gmail.com",
+    "text": "Hi there! I am your minimal AI Chat Assistant.",
+    "timestamp": "2026-08-07T02:59:53.140Z",
+    "formattedTime": "08:29 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786071598789_5ny5z",
+    "senderEmail": "bob@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "heelo",
+    "timestamp": "2026-08-07T02:59:58.789Z",
+    "formattedTime": "08:29 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786071599806_80b9a",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "bob@gmail.com",
+    "text": "I'm a simple AI assistant built right into your WhatsApp-style chat app!",
+    "timestamp": "2026-08-07T02:59:59.806Z",
+    "formattedTime": "08:29 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786071602940_0z1mn",
+    "senderEmail": "bob@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "ok",
+    "timestamp": "2026-08-07T03:00:02.940Z",
+    "formattedTime": "08:30 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786071603944_qy1ug",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "bob@gmail.com",
+    "text": "I'm a simple AI assistant built right into your WhatsApp-style chat app!",
+    "timestamp": "2026-08-07T03:00:03.944Z",
+    "formattedTime": "08:30 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786072088770_29xcl",
+    "senderEmail": "alice@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "hi",
+    "file": null,
+    "timestamp": "2026-08-07T03:08:08.771Z",
+    "formattedTime": "08:38 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786072089898_regs6",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "alice@gmail.com",
+    "text": "Hello Alice Morgan! 😊 How are you doing today? What can I help you with?",
+    "timestamp": "2026-08-07T03:08:09.898Z",
+    "formattedTime": "08:38 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786072108439_lw1mk",
+    "senderEmail": "alice@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "you cxan undersatnd bengali",
+    "file": null,
+    "timestamp": "2026-08-07T03:08:28.439Z",
+    "formattedTime": "08:38 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786072109447_fyrg6",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "alice@gmail.com",
+    "text": "That's a great topic, Alice Morgan! I'm designed to help answer your questions, assist with your real-time chat project, and provide helpful insights. Feel free to ask me anything!",
+    "timestamp": "2026-08-07T03:08:29.447Z",
+    "formattedTime": "08:38 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786072126219_joceo",
+    "senderEmail": "alice@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "no no myou understand negali laguage",
+    "file": null,
+    "timestamp": "2026-08-07T03:08:46.219Z",
+    "formattedTime": "08:38 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786072127224_jf8dk",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "alice@gmail.com",
+    "text": "That's a great topic, Alice Morgan! I'm designed to help answer your questions, assist with your real-time chat project, and provide helpful insights. Feel free to ask me anything!",
+    "timestamp": "2026-08-07T03:08:47.224Z",
+    "formattedTime": "08:38 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786072144329_jfr75",
+    "senderEmail": "alice@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "🙌",
+    "file": null,
+    "timestamp": "2026-08-07T03:09:04.329Z",
+    "formattedTime": "08:39 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786072145345_tbbq5",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "alice@gmail.com",
+    "text": "That's a great topic, Alice Morgan! I'm designed to help answer your questions, assist with your real-time chat project, and provide helpful insights. Feel free to ask me anything!",
+    "timestamp": "2026-08-07T03:09:05.346Z",
+    "formattedTime": "08:39 am",
+    "status": "read"
+  },
+  {
+    "id": "msg_1786072149296_coq9m",
+    "senderEmail": "alice@gmail.com",
+    "receiverEmail": "bot@ai.com",
+    "text": "🔥",
+    "file": null,
+    "timestamp": "2026-08-07T03:09:09.296Z",
+    "formattedTime": "08:39 am",
+    "status": "delivered"
+  },
+  {
+    "id": "msg_1786072150301_3xc43",
+    "senderEmail": "bot@ai.com",
+    "receiverEmail": "alice@gmail.com",
+    "text": "That's a great topic, Alice Morgan! I'm designed to help answer your questions, assist with your real-time chat project, and provide helpful insights. Feel free to ask me anything!",
+    "timestamp": "2026-08-07T03:09:10.301Z",
+    "formattedTime": "08:39 am",
+    "status": "read"
+  }
+]

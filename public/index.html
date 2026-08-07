@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat App - WhatsApp Style</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Sign-In SDK -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+  <!-- ===================================================
+       1. LOGIN / SIGN UP SCREEN (Google & Gmail Auth)
+       =================================================== -->
+  <div id="login-screen" class="screen">
+    <div class="login-card">
+      <div class="app-brand">
+        <span class="brand-icon">💬</span>
+        <h2>Real-Time Chat</h2>
+        <p>Sign in with your Gmail or Google Account</p>
+      </div>
+
+      <!-- Google Authentication Option -->
+      <div class="google-auth-container">
+        <div id="g_id_onload"
+          data-client_id="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
+          data-callback="handleGoogleSignIn"
+          data-auto_prompt="false">
+        </div>
+        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left"></div>
+      </div>
+
+      <div class="divider">
+        <span>OR QUICK SIGN IN</span>
+      </div>
+
+      <!-- Gmail & Name Direct Login Form -->
+      <form id="gmail-login-form">
+        <div class="form-group">
+          <label for="input-name">Full Name</label>
+          <input type="text" id="input-name" placeholder="e.g. Sourjaya Das" required autocomplete="off" />
+        </div>
+
+        <div class="form-group">
+          <label for="input-email">Gmail Address</label>
+          <input type="email" id="input-email" placeholder="e.g. user@gmail.com" required autocomplete="off" />
+        </div>
+
+        <!-- Quick Demo Profiles -->
+        <div class="demo-profiles">
+          <p>Quick Test Accounts:</p>
+          <div class="profile-chips">
+            <button type="button" class="chip" onclick="fillDemo('Alice Morgan', 'alice@gmail.com')">👩 Alice</button>
+            <button type="button" class="chip" onclick="fillDemo('Bob Marley', 'bob@gmail.com')">👨 Bob</button>
+            <button type="button" class="chip" onclick="fillDemo('Charlie Brown', 'charlie@gmail.com')">🧑 Charlie</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary">Enter Real-Time Chat</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       2. MAIN WHATSAPP-STYLE CHAT INTERFACE
+       =================================================== -->
+  <div id="chat-screen" class="screen hidden">
+    
+    <!-- LEFT SIDEBAR: User Profile, Search & Contacts List -->
+    <div class="sidebar">
+      
+      <!-- Top Bar: Current User Profile -->
+      <div class="user-profile-bar">
+        <div class="user-info">
+          <img id="my-avatar" src="" alt="Avatar" class="avatar" />
+          <div class="user-details">
+            <h4 id="my-name">User Name</h4>
+            <span id="my-email">user@gmail.com</span>
+          </div>
+        </div>
+        <button id="logout-btn" title="Logout">Logout 🚪</button>
+      </div>
+
+      <!-- Search Contacts Bar -->
+      <div class="search-box">
+        <input type="text" id="user-search-input" placeholder="🔍 Search user by name or Gmail..." autocomplete="off" />
+      </div>
+
+      <!-- Contacts / Registered Users List -->
+      <div class="contacts-container">
+        <h4 class="section-title">CHATS & CONTACTS</h4>
+        <ul id="contacts-list"></ul>
+      </div>
+
+    </div>
+
+    <!-- MAIN CHAT AREA: 1-to-1 Private Conversation -->
+    <div class="chat-main">
+      
+      <!-- Chat Header -->
+      <div id="chat-header" class="chat-header">
+        <div class="active-contact-info">
+          <img id="active-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Select" class="avatar" />
+          <div>
+            <h3 id="active-contact-name">Select a user to chat</h3>
+            <span id="active-contact-status" class="status-text">Choose a contact from the left sidebar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Messages Window -->
+      <div id="chat-messages" class="messages-container">
+        <div class="empty-state">
+          <span class="empty-icon">💬</span>
+          <h3>Welcome to Real-Time Chat!</h3>
+          <p>Select any registered user or Gmail contact on the left to start a private real-time conversation.</p>
+        </div>
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="typing-indicator" class="typing-indicator"></div>
+
+      <!-- Attachment Pending Preview Banner -->
+      <div id="attachment-preview-banner" class="attachment-preview-banner hidden">
+        <span id="attachment-name">File Name.jpg</span>
+        <button id="cancel-attachment-btn" type="button">✖</button>
+      </div>
+
+      <!-- Interactive Emoji Picker Dropdown -->
+      <div id="emoji-picker" class="emoji-picker-popup hidden">
+        <div class="emoji-grid">
+          <span>😀</span><span>😃</span><span>😄</span><span>😁</span><span>😆</span>
+          <span>😅</span><span>😂</span><span>🤣</span><span>😊</span><span>😇</span>
+          <span>🙂</span><span>🙃</span><span>😉</span><span>😌</span><span>😍</span>
+          <span>🥰</span><span>😘</span><span>😗</span><span>😙</span><span>😚</span>
+          <span>😋</span><span>😛</span><span>😝</span><span>😜</span><span>🤪</span>
+          <span>🤨</span><span>🧐</span><span>🤓</span><span>😎</span><span>🤩</span>
+          <span>🥳</span><span>😏</span><span>😒</span><span>😞</span><span>😔</span>
+          <span>👍</span><span>👎</span><span>👏</span><span>🙌</span><span>🙏</span>
+          <span>❤️</span><span>💖</span><span>🔥</span><span>✨</span><span>🚀</span>
+          <span>🎉</span><span>💡</span><span>📷</span><span>📄</span><span>💬</span>
+        </div>
+      </div>
+
+      <!-- Message Input Form -->
+      <form id="chat-form" class="message-form hidden">
+        
+        <!-- Emoji Button -->
+        <button type="button" id="emoji-btn" class="icon-btn" title="Add Emoji">😀</button>
+        
+        <!-- File Picker Attachment Button -->
+        <button type="button" id="attach-btn" class="icon-btn" title="Attach Photo or File">📎</button>
+        <input type="file" id="file-input" hidden accept="image/*,.pdf,.doc,.docx,.txt,.zip" />
+
+        <!-- Text Input -->
+        <input 
+          type="text" 
+          id="message-input" 
+          placeholder="Type a message..." 
+          autocomplete="off" 
+        />
+        <button type="submit">Send</button>
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- Socket.IO Client SDK -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Client Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
